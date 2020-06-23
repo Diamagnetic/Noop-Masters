@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "483938698563",
+    "firebase_url": "https://vjcommittee-37d68.firebaseio.com",
+    "project_id": "vjcommittee-37d68",
+    "storage_bucket": "vjcommittee-37d68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483938698563:android:b2672852b94c3ae9fe1bf6",
+        "android_client_info": {
+          "package_name": "com.noopmasters.vjcommittee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483938698563-mt6ul56div8qb6bh55dt4lanukbhmlgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN07fQ3nCWJC5-Q1HGaAx1PnUfL_THWOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483938698563-mt6ul56div8qb6bh55dt4lanukbhmlgm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
