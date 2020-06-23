@@ -25,6 +25,34 @@ class CommitteeSelectionScreen extends StatelessWidget {
             committeeLogo: 'images/technovanza_logo.JPG',
           ),
           //TODO: Add a new button here for every new committee created. All they require is Strings of name, logo.
+          CommitteeButtonCreator(
+            committeeName: 'ENTHUSIA',
+            committeeLogo: 'images/enthusia_logo.jpg',
+          ),
+          CommitteeButtonCreator(
+            committeeLogo: 'images/pratibimb_logo.jpg',
+            committeeName: 'PRATIBIMB',
+          ),
+          CommitteeButtonCreator(
+            committeeName: 'AERO VJTI',
+            committeeLogo: 'images/aerovjti_logo.png',
+          ),
+          CommitteeButtonCreator(
+            committeeName: 'COC',
+            committeeLogo: 'images/coc_logo.jpg',
+          ),
+          CommitteeButtonCreator(
+            committeeName: 'SRA',
+            committeeLogo: 'images/sra_logo.png',
+          ),
+          CommitteeButtonCreator(
+            committeeName: 'DLA',
+            committeeLogo: 'images/dla_logo.png',
+          ),
+          CommitteeButtonCreator(
+            committeeName: 'ECELL',
+            committeeLogo: 'images/ecell_logo.png',
+          ),
         ],
       ),
     );

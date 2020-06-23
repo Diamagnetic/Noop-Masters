@@ -121,7 +121,9 @@ class _ButtonAnimationState extends State<ButtonAnimation>
 class ButtonPainting extends StatelessWidget {
   final String committeeLogo;
 
-  ButtonPainting({@required this.committeeLogo});
+  ButtonPainting({
+    @required this.committeeLogo,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -133,6 +135,7 @@ class ButtonPainting extends StatelessWidget {
           ),
           fit: BoxFit.fill,
         ),
+        color: Colors.black54,
         borderRadius: BorderRadius.circular(25),
         boxShadow: [
           BoxShadow(
