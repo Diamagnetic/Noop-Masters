@@ -40,7 +40,7 @@ class CommitteeScreenCreator extends StatelessWidget {
           ),
           Container(
             width: 350,
-            height: 400,
+            height: 550,
             margin: EdgeInsets.all(25),
             child: GridView.count(
               crossAxisCount: 1,
@@ -51,7 +51,15 @@ class CommitteeScreenCreator extends StatelessWidget {
                 ),
                 SizedBox(),
                 CardCreator(
+                  cardTitle: 'GALLERY',
+                ),
+                SizedBox(),
+                CardCreator(
                   cardTitle: 'COMMITTEE MEMBERS',
+                ),
+                SizedBox(),
+                CardCreator(
+                  cardTitle: 'JOIN',
                 ),
               ],
             ),
