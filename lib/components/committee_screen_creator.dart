@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vjcommittee/constants.dart';
+import 'package:vjcommittee/screens/committee_about_screen.dart';
 
 class CommitteeScreenCreator extends StatelessWidget {
   final String committeeName;
@@ -48,18 +49,31 @@ class CommitteeScreenCreator extends StatelessWidget {
               children: <Widget>[
                 CardCreator(
                   cardTitle: 'ABOUT',
+                  onPressed: () {
+//          Functionality will be added soon
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CommitteAboutScreen(
+                                  committeeLogo: committeeLogo,
+                                  committeeName: committeeName,
+                                )));
+                  },
                 ),
                 SizedBox(),
                 CardCreator(
                   cardTitle: 'GALLERY',
+                  onPressed: () {},
                 ),
                 SizedBox(),
                 CardCreator(
                   cardTitle: 'COMMITTEE MEMBERS',
+                  onPressed: () {},
                 ),
                 SizedBox(),
                 CardCreator(
                   cardTitle: 'JOIN',
+                  onPressed: () {},
                 ),
               ],
             ),
@@ -72,8 +86,9 @@ class CommitteeScreenCreator extends StatelessWidget {
 
 class CardCreator extends StatelessWidget {
   final String cardTitle;
+  final Function onPressed;
 
-  CardCreator({@required this.cardTitle});
+  CardCreator({@required this.cardTitle, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -84,9 +99,7 @@ class CardCreator extends StatelessWidget {
         borderRadius: BorderRadius.circular(100),
       ),
       child: FlatButton(
-        onPressed: () {
-//          Functionality will be added soon
-        },
+        onPressed: onPressed,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(100),
         ),
