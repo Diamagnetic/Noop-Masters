@@ -51,7 +51,15 @@ class CommitteeScreenCreator extends StatelessWidget {
                 ),
                 SizedBox(),
                 CardCreator(
+                  cardTitle: 'GALLERY',
+                ),
+                SizedBox(),
+                CardCreator(
                   cardTitle: 'COMMITTEE MEMBERS',
+                ),
+                SizedBox(),
+                CardCreator(
+                  cardTitle: 'JOIN',
                 ),
               ],
             ),
