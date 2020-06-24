@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../constants.dart';
+import 'package:vjcommittee/constants.dart';
 
 class CommitteeScreenCreator extends StatelessWidget {
   final String committeeName;
@@ -54,7 +53,6 @@ class CommitteeScreenCreator extends StatelessWidget {
                 CardCreator(
                   cardTitle: 'COMMITTEE MEMBERS',
                 ),
-                //TODO: CardCreator class creates a card for each field of the committee. Just add a SizedBox() with no properties before creating a new card.
               ],
             ),
           ),
