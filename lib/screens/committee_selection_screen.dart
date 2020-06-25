@@ -14,45 +14,59 @@ class CommitteeSelectionScreen extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Color(0xFF424242),
       ),
-      body: GridView.count(
-        padding: EdgeInsets.only(top: 20),
-        mainAxisSpacing: 20,
-        crossAxisSpacing: 1,
-        crossAxisCount: 2,
-        children: <Widget>[
-          CommitteeButtonCreator(
-            committeeName: 'TECHNOVANZA',
-            committeeLogo: 'images/technovanza_logo.JPG',
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(
+              'images/app_logo.png',
+            ),
+            colorFilter: ColorFilter.mode(
+              Colors.black.withOpacity(.25),
+              BlendMode.dstATop,
+            ),
+            fit: BoxFit.cover,
           ),
-          CommitteeButtonCreator(
-            committeeLogo: 'images/pratibimb_logo.jpg',
-            committeeName: 'PRATIBIMB',
-          ),
-          CommitteeButtonCreator(
-            committeeName: 'ENTHUSIA',
-            committeeLogo: 'images/enthusia_logo.jpg',
-          ),
-          CommitteeButtonCreator(
-            committeeName: 'ECELL',
-            committeeLogo: 'images/ecell_logo.png',
-          ),
-          CommitteeButtonCreator(
-            committeeName: 'COC',
-            committeeLogo: 'images/coc_logo.jpg',
-          ),
-          CommitteeButtonCreator(
-            committeeName: 'SRA',
-            committeeLogo: 'images/sra_logo.png',
-          ),
-          CommitteeButtonCreator(
-            committeeName: 'AERO VJTI',
-            committeeLogo: 'images/aerovjti_logo.png',
-          ),
-          CommitteeButtonCreator(
-            committeeName: 'DLA',
-            committeeLogo: 'images/dla_logo.png',
-          ),
-        ],
+        ),
+        child: GridView.count(
+          padding: EdgeInsets.only(top: 20),
+          mainAxisSpacing: 20,
+          crossAxisSpacing: 1,
+          crossAxisCount: 2,
+          children: <Widget>[
+            CommitteeButtonCreator(
+              committeeName: 'TECHNOVANZA',
+              committeeLogo: 'images/technovanza_logo.JPG',
+            ),
+            CommitteeButtonCreator(
+              committeeLogo: 'images/pratibimb_logo.jpg',
+              committeeName: 'PRATIBIMB',
+            ),
+            CommitteeButtonCreator(
+              committeeName: 'ENTHUSIA',
+              committeeLogo: 'images/enthusia_logo.jpg',
+            ),
+            CommitteeButtonCreator(
+              committeeName: 'ECELL',
+              committeeLogo: 'images/ecell_logo.png',
+            ),
+            CommitteeButtonCreator(
+              committeeName: 'COC',
+              committeeLogo: 'images/coc_logo.jpg',
+            ),
+            CommitteeButtonCreator(
+              committeeName: 'SRA',
+              committeeLogo: 'images/sra_logo.png',
+            ),
+            CommitteeButtonCreator(
+              committeeName: 'AERO VJTI',
+              committeeLogo: 'images/aerovjti_logo.png',
+            ),
+            CommitteeButtonCreator(
+              committeeName: 'DLA',
+              committeeLogo: 'images/dla_logo.png',
+            ),
+          ],
+        ),
       ),
     );
   }

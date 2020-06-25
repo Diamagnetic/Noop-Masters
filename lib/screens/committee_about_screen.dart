@@ -10,15 +10,16 @@ class CommitteAboutScreen extends StatelessWidget {
   final String committeeName;
   final String committeeLogo;
   List abtData = [];
+  List<String> aboutData = [];
 
   void getData() async {
     final dt = await _firestore.collection('ecellabt').getDocuments();
     for (var message in dt.documents) abtData = message.data.values;
   }
 
-  String storeData() {
-    for (int i in abtData) return (abtData[i]);
-  }
+//  String storeData() {
+//    for (int i in abtData) aboutData[i] = abtData[i];
+//  }
 
   @override
   Widget build(BuildContext context) {
