@@ -6,7 +6,7 @@ const kAppbarTitleTextStyle = TextStyle(
   letterSpacing: 5,
 );
 
-const kBackgroundColour = Color(0xFF424242);
+const kAppbarBackgroundColour = Color(0xFF424242);
 
 const kCardTitleTextStyle = TextStyle(
   fontFamily: 'Roboto',
@@ -21,4 +21,19 @@ const kCommitteeButtonTextStyle = TextStyle(
   fontFamily: 'Roboto',
 );
 
+const kAboutPageCommitteeTextStyle = TextStyle(
+  color: Colors.black,
+  fontSize: 25,
+  fontFamily: 'Roboto',
+);
 
+const kAboutPageAboutTextStyle = TextStyle(
+  color: Colors.black,
+  fontSize: 20,
+  fontFamily: 'Roboto',
+);
+
+const kAboutPageDataTextStyle = TextStyle(
+  fontFamily: 'Roboto',
+  fontSize: 23,
+);

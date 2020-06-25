@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vjcommittee/constants.dart';
-import 'package:vjcommittee/screens/committee_about_screen.dart';
+import 'package:vjcommittee/screens/committee_about_screen_creator.dart';
 
 class CommitteeScreenCreator extends StatelessWidget {
   final String committeeName;
@@ -19,7 +19,7 @@ class CommitteeScreenCreator extends StatelessWidget {
           committeeName,
           style: kAppbarTitleTextStyle,
         ),
-        backgroundColor: kBackgroundColour,
+        backgroundColor: kAppbarBackgroundColour,
         centerTitle: true,
       ),
       body: Stack(
@@ -50,14 +50,15 @@ class CommitteeScreenCreator extends StatelessWidget {
                 CardCreator(
                   cardTitle: 'ABOUT',
                   onPressed: () {
-//          Functionality will be added soon
                     Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => CommitteAboutScreen(
-                                  committeeLogo: committeeLogo,
-                                  committeeName: committeeName,
-                                )));
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CommitteeAboutScreenCreator(
+                          committeeLogo: committeeLogo,
+                          committeeName: committeeName,
+                        ),
+                      ),
+                    );
                   },
                 ),
                 SizedBox(),
@@ -93,7 +94,7 @@ class CardCreator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: kBackgroundColour,
+      color: kAppbarBackgroundColour,
       elevation: 20,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(100),
