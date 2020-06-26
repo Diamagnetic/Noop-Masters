@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vjcommittee/constants.dart';
 import 'package:vjcommittee/screens/committee_about_screen_creator.dart';
+import 'package:vjcommittee/screens/committee_members_screen.dart';
 
 class CommitteeScreenCreator extends StatelessWidget {
   final String committeeName;
@@ -69,7 +70,17 @@ class CommitteeScreenCreator extends StatelessWidget {
                 SizedBox(),
                 CardCreator(
                   cardTitle: 'COMMITTEE MEMBERS',
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CommitteeMembersScreen(
+                          committeeLogo: committeeLogo,
+                          committeeName: committeeName,
+                        ),
+                      ),
+                    );
+                  },
                 ),
                 SizedBox(),
                 CardCreator(
