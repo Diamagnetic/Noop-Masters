@@ -46,6 +46,10 @@ class CommitteeSelectionScreen extends StatelessWidget {
               committeeLogo: 'images/enthusia_logo.jpg',
             ),
             CommitteeButtonCreator(
+              committeeName: 'RANGAWARDHAN',
+              committeeLogo: 'images/rangawardhan_logo.jpg',
+            ),
+            CommitteeButtonCreator(
               committeeName: 'ECELL',
               committeeLogo: 'images/ecell_logo.png',
             ),
@@ -55,7 +59,7 @@ class CommitteeSelectionScreen extends StatelessWidget {
             ),
             CommitteeButtonCreator(
               committeeName: 'SRA',
-              committeeLogo: 'images/sra_logo.png',
+              committeeLogo: 'images/sra_logo.jpg',
             ),
             CommitteeButtonCreator(
               committeeName: 'AERO VJTI',
@@ -65,6 +69,10 @@ class CommitteeSelectionScreen extends StatelessWidget {
               committeeName: 'DLA',
               committeeLogo: 'images/dla_logo.png',
             ),
+            CommitteeButtonCreator(
+              committeeName: 'ENACTUS',
+              committeeLogo: 'images/enactus_logo.jpg',
+            )
           ],
         ),
       ),
