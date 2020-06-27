@@ -94,7 +94,7 @@ class CardCreator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: kAppbarBackgroundColour,
+      color: kCardBackgroundColour,
       elevation: 20,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(100),

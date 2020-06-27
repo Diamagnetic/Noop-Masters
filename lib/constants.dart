@@ -8,6 +8,8 @@ const kAppbarTitleTextStyle = TextStyle(
 
 const kAppbarBackgroundColour = Color(0xFF424242);
 
+const kCardBackgroundColour = Color(0xFF424242);
+
 const kCardTitleTextStyle = TextStyle(
   fontFamily: 'Roboto',
   fontSize: 24,
