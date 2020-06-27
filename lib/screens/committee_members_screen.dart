@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vjcommittee/constants.dart';
+import 'package:vjcommittee/data/committee_members.dart';
 
 class CommitteeMembersScreen extends StatelessWidget {
   CommitteeMembersScreen(
@@ -40,13 +41,20 @@ class CommitteeMembersScreen extends StatelessWidget {
                     thickness: 1.2,
                     color: Colors.grey,
                   ),
-                  CommitteeMemberContainerCreator(),
-                  CommitteeMemberContainerCreator(),
-                  CommitteeMemberContainerCreator(),
-                  CommitteeMemberContainerCreator(),
-                  CommitteeMemberContainerCreator(),
                 ],
               ),
+            ),
+            CommitteeMemberContainerCreator(
+              1,
+              committeeName: committeeName,
+            ),
+            CommitteeMemberContainerCreator(
+              2,
+              committeeName: committeeName,
+            ),
+            CommitteeMemberContainerCreator(
+              0,
+              committeeName: committeeName,
             ),
           ],
         ),
@@ -56,6 +64,12 @@ class CommitteeMembersScreen extends StatelessWidget {
 }
 
 class CommitteeMemberContainerCreator extends StatelessWidget {
+  final int index;
+
+  CommitteeMemberContainerCreator(this.index, {@required this.committeeName});
+
+  final String committeeName;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -66,10 +80,9 @@ class CommitteeMemberContainerCreator extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
       width: double.infinity,
       height: 80.0,
-      child: Text(
-        'HI',
-        textAlign: TextAlign.center,
-        style: kCardTitleTextStyle,
+      child: CommitteeMembersScreenDataGetter(
+        index,
+        committeeName: committeeName,
       ),
     );
   }
