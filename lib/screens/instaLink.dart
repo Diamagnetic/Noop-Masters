@@ -5,7 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 class LinkCreator extends StatelessWidget {
   LinkCreator({@required this.committeeLink});
   final String committeeLink;
-  bool showSpinner = false;
+
   @override
   Widget build(BuildContext context) {
     return Card(
