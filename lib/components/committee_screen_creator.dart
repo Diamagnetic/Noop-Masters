@@ -6,7 +6,6 @@ import 'package:vjcommittee/screens/committee_join_screen.dart';
 import 'package:vjcommittee/screens/committee_members_screen.dart';
 import 'package:vjcommittee/screens/instaLink.dart';
 
-
 class CommitteeScreenCreator extends StatelessWidget {
   final String committeeName;
   final String committeeLogo;
@@ -67,10 +66,9 @@ class CommitteeScreenCreator extends StatelessWidget {
                   },
                 ),
                 SizedBox(),
-                linkCreator(),
-                  
-                  
-                
+                linkCreator(
+                  committeeName: committeeName,
+                ),
                 SizedBox(),
                 CardCreator(
                   cardTitle: 'COMMITTEE MEMBERS',

@@ -3,7 +3,8 @@ import 'package:vjcommittee/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class linkCreator extends StatelessWidget {
-  
+  linkCreator({@required this.committeeName});
+  final String committeeName;
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -13,7 +14,7 @@ class linkCreator extends StatelessWidget {
         borderRadius: BorderRadius.circular(100),
       ),
       child: FlatButton(
-        onPressed: _launchURL ,
+        onPressed: _launchURL(committeeName),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(100),
         ),
@@ -30,21 +31,16 @@ class linkCreator extends StatelessWidget {
   }
 }
 
-_launchURL() async {
-  
-    String url = 'https://www.instagram.com/technovanza/';
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-    
-    
-    }
-  // String link;
-  // if( CommitteeButtonCreator(committeeName :'TECHNOVANZA')==true){
-  //      link ='https://www.instagram.com/technovanza/';
-  //   }else if (CommitteeButtonCreator(committeeName :'ENTHUSIA')==true){
-  //     link ='https://www.instagram.com/pratibimbvjti/';
-
-  
+_launchURL(String commiteeName) async {
+  String url = 'https://www.instagram.com/$commiteeName/';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+// String link;
+// if( CommitteeButtonCreator(committeeName :'TECHNOVANZA')==true){
+//      link ='https://www.instagram.com/technovanza/';
+//   }else if (CommitteeButtonCreator(committeeName :'ENTHUSIA')==true){
+//     link ='https://www.instagram.com/pratibimbvjti/';
