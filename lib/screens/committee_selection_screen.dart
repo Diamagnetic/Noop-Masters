@@ -72,6 +72,10 @@ class CommitteeSelectionScreen extends StatelessWidget {
             CommitteeButtonCreator(
               committeeName: 'ENACTUS',
               committeeLogo: 'images/enactus_logo.jpg',
+            ),
+            CommitteeButtonCreator(
+              committeeName: 'IEEE',
+              committeeLogo: 'images/ieee_logo.png',
             )
           ],
         ),
