@@ -4,7 +4,7 @@ import 'package:vjcommittee/screens/committee_about_screen_creator.dart';
 import 'package:vjcommittee/screens/committee_gallery_screen.dart';
 import 'package:vjcommittee/screens/committee_join_screen.dart';
 import 'package:vjcommittee/screens/committee_members_screen.dart';
-import 'package:vjcommittee/screens/hyperlink.dart';
+import 'package:vjcommittee/screens/instaLink.dart';
 
 
 class CommitteeScreenCreator extends StatelessWidget {
@@ -119,7 +119,7 @@ class CardCreator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: kAppbarBackgroundColour,
+      color: kCardBackgroundColour,
       elevation: 20,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(100),

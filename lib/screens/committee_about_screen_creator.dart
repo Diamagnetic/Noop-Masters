@@ -48,7 +48,9 @@ class CommitteeAboutScreenCreator extends StatelessWidget {
             Container(
               padding: EdgeInsets.symmetric(horizontal: 10),
               alignment: Alignment(-.95, 0),
-              child: CommitteeAboutScreenDataGetter(),
+              child: CommitteeAboutScreenDataGetter(
+                committeeName: committeeName,
+              ),
             ),
           ],
         ),
@@ -58,6 +60,10 @@ class CommitteeAboutScreenCreator extends StatelessWidget {
 }
 
 class CommitteeAboutScreenDataGetter extends StatefulWidget {
+  final String committeeName;
+
+  CommitteeAboutScreenDataGetter({@required this.committeeName});
+
   @override
   _CommitteeAboutScreenDataGetterState createState() =>
       _CommitteeAboutScreenDataGetterState();
@@ -67,34 +73,20 @@ class _CommitteeAboutScreenDataGetterState
     extends State<CommitteeAboutScreenDataGetter> {
   final _firestore = Firestore.instance;
 
-//  @override
-//  void initState() {
-//    super.initState();
-//    getData();
-//  }
-//
-//  void getData() async {
-//    final data = await _firestore.collection('ecellabt').getDocuments();
-//    for (var info in data.documents) {
-//      print(info.data);
-//    }
-//  }
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: FutureBuilder<QuerySnapshot>(
-        future: _firestore.collection('ecellabt').getDocuments(),
-        builder: (context, fullData) {
+        future: _firestore.collection('IEEE').getDocuments(),
+        builder: (context, snapshot) {
           List<Text> aboutWidget = [];
-          if (fullData.hasData) {
-            final aboutData = fullData.data.documents;
+          if (snapshot.hasData) {
+            final aboutData = snapshot.data.documents;
             for (var data in aboutData) {
-              final dataAim = data.data['aim'];
-              final dataAimData = data.data['initiatives'];
+              final dataAim = data.data;
               final aimWidget = Text(
-                '$dataAim \n $dataAimData',
-                textScaleFactor: 1.5,
+                '$dataAim',
+                style: kAboutPageDataTextStyle,
               );
               aboutWidget.add(aimWidget);
             }
