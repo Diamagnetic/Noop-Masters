@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vjcommittee/constants.dart';
 import 'package:vjcommittee/screens/committee_about_screen_creator.dart';
-import 'package:vjcommittee/screens/committee_gallery_screen.dart';
 import 'package:vjcommittee/screens/committee_join_screen.dart';
 import 'package:vjcommittee/screens/committee_members_screen.dart';
 import 'package:vjcommittee/screens/instaLink.dart';
@@ -9,9 +8,12 @@ import 'package:vjcommittee/screens/instaLink.dart';
 class CommitteeScreenCreator extends StatelessWidget {
   final String committeeName;
   final String committeeLogo;
+  final String committeeLink;
 
   CommitteeScreenCreator(
-      {@required this.committeeName, @required this.committeeLogo});
+      {@required this.committeeName,
+      @required this.committeeLogo,
+      @required this.committeeLink});
 
   @override
   Widget build(BuildContext context) {
@@ -66,8 +68,18 @@ class CommitteeScreenCreator extends StatelessWidget {
                   },
                 ),
                 SizedBox(),
-                linkCreator(
-                  committeeName: committeeName,
+                CardCreator(
+                  cardTitle: 'SOCIAL',
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LinkCreator(
+                          committeeLink: committeeLink,
+                        ),
+                      ),
+                    );
+                  },
                 ),
                 SizedBox(),
                 CardCreator(
@@ -139,12 +151,3 @@ class CardCreator extends StatelessWidget {
     );
   }
 }
-// Navigator.push(
-//                       context,
-//                       MaterialPageRoute(
-//                         builder: (context) => CommitteeGalleryScreen(
-//                           committeeLogo: committeeLogo,
-//                           committeeName: committeeName,
-//                         ),
-//                       ),
-//                     );
