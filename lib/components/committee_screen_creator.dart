@@ -4,6 +4,8 @@ import 'package:vjcommittee/screens/committee_about_screen_creator.dart';
 import 'package:vjcommittee/screens/committee_gallery_screen.dart';
 import 'package:vjcommittee/screens/committee_join_screen.dart';
 import 'package:vjcommittee/screens/committee_members_screen.dart';
+import 'package:vjcommittee/screens/hyperlink.dart';
+
 
 class CommitteeScreenCreator extends StatelessWidget {
   final String committeeName;
@@ -65,20 +67,10 @@ class CommitteeScreenCreator extends StatelessWidget {
                   },
                 ),
                 SizedBox(),
-                CardCreator(
-                  cardTitle: 'GALLERY',
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => CommitteeGalleryScreen(
-                          committeeLogo: committeeLogo,
-                          committeeName: committeeName,
-                        ),
-                      ),
-                    );
-                  },
-                ),
+                linkCreator(),
+                  
+                  
+                
                 SizedBox(),
                 CardCreator(
                   cardTitle: 'COMMITTEE MEMBERS',
@@ -149,3 +141,12 @@ class CardCreator extends StatelessWidget {
     );
   }
 }
+// Navigator.push(
+//                       context,
+//                       MaterialPageRoute(
+//                         builder: (context) => CommitteeGalleryScreen(
+//                           committeeLogo: committeeLogo,
+//                           committeeName: committeeName,
+//                         ),
+//                       ),
+//                     );

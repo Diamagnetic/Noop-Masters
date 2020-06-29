@@ -9,6 +9,7 @@ class CommitteeButtonCreator extends StatelessWidget {
   CommitteeButtonCreator({
     @required this.committeeName,
     @required this.committeeLogo,
+    
   });
 
   @override
