@@ -62,7 +62,7 @@ class CommitteeAboutScreenCreator extends StatelessWidget {
 class CommitteeAboutScreenDataGetter extends StatefulWidget {
   final String committeeName;
 
-  CommitteeAboutScreenDataGetter({@required this.committeeName});
+  CommitteeAboutScreenDataGetter({this.committeeName});
 
   @override
   _CommitteeAboutScreenDataGetterState createState() =>
@@ -76,26 +76,42 @@ class _CommitteeAboutScreenDataGetterState
   @override
   Widget build(BuildContext context) {
     return SafeArea(
+<<<<<<< HEAD
       child: FutureBuilder<QuerySnapshot>(
         future: _firestore.collection(widget.committeeName).getDocuments(),
+=======
+      child: StreamBuilder(
+        stream: _firestore.collection('${widget.committeeName}').snapshots(),
+>>>>>>> 94d639745ed522c705a01eaf958ddf0a0fbfa31b
         builder: (context, snapshot) {
-          List<Text> aboutWidget = [];
-          if (snapshot.hasData) {
-            final aboutData = snapshot.data.documents;
-            for (var data in aboutData) {
-              final dataAim = data.data;
-              final aimWidget = Text(
-                '$dataAim',
-                style: kAboutPageDataTextStyle,
-              );
-              aboutWidget.add(aimWidget);
-            }
-          }
+          if (!snapshot.hasData) return Text('Loading Data.....Please Wait..');
           return Column(
-            children: aboutWidget,
+            children: <Widget>[
+              Text(snapshot.data.documents[0]['ABOUT']),
+            ],
           );
         },
       ),
+//      child: FutureBuilder<QuerySnapshot>(
+//        future: _firestore.collection('ECELL').getDocuments(),
+//        builder: (context, snapshot) {
+//          List<Text> aboutWidget = [];
+//          if (snapshot.hasData) {
+//            final aboutData = snapshot.data.documents;
+//            for (var data in aboutData) {
+//              final dataAim = data.data;
+//              final aimWidget = Text(
+//                '$dataAim',
+//                style: kAboutPageDataTextStyle,
+//              );
+//              aboutWidget.add(aimWidget);
+//            }
+//          }
+//          return Column(
+//            children: aboutWidget,
+//          );
+//        },
+//      ),
     );
   }
 }

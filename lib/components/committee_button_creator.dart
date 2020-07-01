@@ -5,10 +5,12 @@ import 'committee_screen_creator.dart';
 class CommitteeButtonCreator extends StatelessWidget {
   final String committeeName;
   final String committeeLogo;
+  final String committeeLink;
 
   CommitteeButtonCreator({
     @required this.committeeName,
     @required this.committeeLogo,
+    @required this.committeeLink,
   });
 
   @override
@@ -20,6 +22,7 @@ class CommitteeButtonCreator extends StatelessWidget {
         ButtonAnimation(
           committeeName: committeeName,
           committeeLogo: committeeLogo,
+          committeeLink: committeeLink,
         ),
         Center(
           child: Text(
@@ -35,8 +38,9 @@ class CommitteeButtonCreator extends StatelessWidget {
 class ButtonAnimation extends StatefulWidget {
   final String committeeLogo;
   final String committeeName;
+  final String committeeLink;
 
-  ButtonAnimation({this.committeeName, this.committeeLogo});
+  ButtonAnimation({this.committeeName, this.committeeLogo, this.committeeLink});
 
   @override
   _ButtonAnimationState createState() => _ButtonAnimationState();
@@ -49,8 +53,10 @@ class _ButtonAnimationState extends State<ButtonAnimation>
       PageRouteBuilder(
         pageBuilder: (context, animation, _) {
           return CommitteeScreenCreator(
-              committeeName: widget.committeeName,
-              committeeLogo: widget.committeeLogo);
+            committeeName: widget.committeeName,
+            committeeLogo: widget.committeeLogo,
+            committeeLink: widget.committeeLink,
+          );
         },
         transitionsBuilder: (context, animation, _, Widget child) {
           return FadeTransition(
