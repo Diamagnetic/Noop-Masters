@@ -39,3 +39,7 @@ const kAboutPageDataTextStyle = TextStyle(
   fontFamily: 'Roboto',
   fontSize: 23,
 );
+
+const kMemberCardTitleTextStyle = kAboutPageDataTextStyle;
+
+const kMemberCardSubtitleTextStyle = kAboutPageAboutTextStyle;

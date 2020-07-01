@@ -77,7 +77,7 @@ class _CommitteeAboutScreenDataGetterState
   Widget build(BuildContext context) {
     return SafeArea(
       child: FutureBuilder<QuerySnapshot>(
-        future: _firestore.collection('IEEE').getDocuments(),
+        future: _firestore.collection(widget.committeeName).getDocuments(),
         builder: (context, snapshot) {
           List<Text> aboutWidget = [];
           if (snapshot.hasData) {

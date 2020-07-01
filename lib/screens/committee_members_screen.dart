@@ -44,18 +44,9 @@ class CommitteeMembersScreen extends StatelessWidget {
                 ],
               ),
             ),
-            CommitteeMemberContainerCreator(
-              1,
-              committeeName: committeeName,
-            ),
-            CommitteeMemberContainerCreator(
-              2,
-              committeeName: committeeName,
-            ),
-            CommitteeMemberContainerCreator(
-              0,
-              committeeName: committeeName,
-            ),
+            Container(
+                child:
+                    CommitteeMembersDataGetter(committeeName: committeeName)),
           ],
         ),
       ),
@@ -63,27 +54,26 @@ class CommitteeMembersScreen extends StatelessWidget {
   }
 }
 
-class CommitteeMemberContainerCreator extends StatelessWidget {
-  final int index;
-
-  CommitteeMemberContainerCreator(this.index, {@required this.committeeName});
-
-  final String committeeName;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20.0),
-        color: kAppbarBackgroundColour,
-      ),
-      margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
-      width: double.infinity,
-      height: 80.0,
-      child: CommitteeMembersScreenDataGetter(
-        index,
-        committeeName: committeeName,
-      ),
-    );
-  }
-}
+//class CommitteeMemberContainerCreator extends StatelessWidget {
+//  final int index;
+//
+//  CommitteeMemberContainerCreator(this.index, {@required this.committeeName});
+//
+//  final String committeeName;
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    return Container(
+//      decoration: BoxDecoration(
+//        borderRadius: BorderRadius.circular(20.0),
+//        color: kCardBackgroundColour,
+//      ),
+//      margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
+//      width: double.infinity,
+//      height: 80.0,
+//      child: CommitteeMembersDataGetter(
+//        committeeName: committeeName,
+//      ),
+//    );
+//  }
+//}
