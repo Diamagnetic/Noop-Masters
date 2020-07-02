@@ -21,6 +21,9 @@ Tools and technologies used in this project are-
 1. Dart Language<br/>
 2. Flutter  
 3. Firebase
+4. git and github
+5. vs code
+6. android studio
 
 ### **Project Setup**  
 This project has made use of Android Studio software in which various flutter packages have been used and also firebase has been used to store data. 
