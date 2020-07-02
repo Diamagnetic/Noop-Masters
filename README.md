@@ -1,3 +1,33 @@
-VJ Committee
+PROJECT NAME
+VJ COMMITTEE
 
-The basic
+Team Name: Noop Master
+
+Team Members
+Prajwal Kolte - prajwalkolte13@gmail.com
+Chirag Dhamange - c.dhamange@gmail.com
+Nayan Taori - nayan200000@gmail.com
+Sahil Kacchi - sahilkacchi84@gmail.com
+
+Mentors
+Palak Mantry
+Shubhankar Gupta
+
+Description
+
+Technology stack
+Tools and technologies used in this project are-
+Flutter
+Dart Language
+
+Project Setup
+
+Usage
+
+Applications
+
+Future scope
+
+Screenshots
+
+
