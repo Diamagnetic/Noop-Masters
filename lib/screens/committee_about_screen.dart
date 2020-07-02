@@ -1,13 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:vjcommittee/data/committee_about.dart';
 import 'package:vjcommittee/constants.dart';
-import 'package:vjcommittee/data/committee_members.dart';
 
-class CommitteeMembersScreen extends StatelessWidget {
-  CommitteeMembersScreen(
-      {@required this.committeeName, @required this.committeeLogo});
+class CommitteeAboutScreenCreator extends StatefulWidget {
+  CommitteeAboutScreenCreator(
+      {@required this.committeeLogo, @required this.committeeName});
 
-  final String committeeName;
   final String committeeLogo;
+  final String committeeName;
+
+  @override
+  _CommitteeAboutScreenCreatorState createState() =>
+      _CommitteeAboutScreenCreatorState();
+}
+
+class _CommitteeAboutScreenCreatorState
+    extends State<CommitteeAboutScreenCreator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,7 +23,7 @@ class CommitteeMembersScreen extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             Container(
-              child: Image.asset(committeeLogo),
+              child: Image.asset(widget.committeeLogo),
             ),
             Container(
               padding: EdgeInsets.only(left: 10, top: 15, right: 10),
@@ -24,14 +32,14 @@ class CommitteeMembersScreen extends StatelessWidget {
                   Container(
                     alignment: Alignment(-.95, 0),
                     child: Text(
-                      committeeName,
+                      widget.committeeName,
                       style: kAboutPageCommitteeTextStyle,
                     ),
                   ),
                   Container(
                     alignment: Alignment(-.95, 0),
                     child: Text(
-                      'Committee Members',
+                      'About',
                       style: kAboutPageAboutTextStyle,
                     ),
                   ),
@@ -45,8 +53,12 @@ class CommitteeMembersScreen extends StatelessWidget {
               ),
             ),
             Container(
-                child:
-                    CommitteeMembersDataGetter(committeeName: committeeName)),
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              alignment: Alignment(-.95, 0),
+              child: CommitteeAboutScreenDataGetter(
+                committeeName: widget.committeeName,
+              ),
+            ),
           ],
         ),
       ),

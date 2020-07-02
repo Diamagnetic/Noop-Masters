@@ -1,19 +1,48 @@
 import 'package:flutter/material.dart';
 import 'package:vjcommittee/constants.dart';
-import 'package:vjcommittee/screens/committee_about_screen_creator.dart';
+import 'package:vjcommittee/screens/committee_about_screen.dart';
 import 'package:vjcommittee/screens/committee_join_screen.dart';
 import 'package:vjcommittee/screens/committee_members_screen.dart';
 import 'package:vjcommittee/screens/instaLink.dart';
 
-class CommitteeScreenCreator extends StatelessWidget {
-  final String committeeName;
-  final String committeeLogo;
-  final String committeeLink;
-
+class CommitteeScreenCreator extends StatefulWidget {
   CommitteeScreenCreator(
       {@required this.committeeName,
       @required this.committeeLogo,
       @required this.committeeLink});
+
+  final String committeeName;
+  final String committeeLogo;
+  final String committeeLink;
+
+  @override
+  _CommitteeScreenCreatorState createState() => _CommitteeScreenCreatorState();
+}
+
+class _CommitteeScreenCreatorState extends State<CommitteeScreenCreator>
+    with TickerProviderStateMixin {
+  void _openScreen(Widget screen) {
+    Navigator.of(context).push(
+      PageRouteBuilder(
+        pageBuilder: (context, animation, _) {
+          return screen;
+        },
+        transitionsBuilder: (context, animation, _, Widget child) {
+          return FadeTransition(
+            opacity: animation,
+            child: ScaleTransition(
+              scale: animation.drive(
+                Tween(begin: 1.5, end: 1.0).chain(
+                  CurveTween(curve: Curves.easeOutCubic),
+                ),
+              ),
+              child: child,
+            ),
+          );
+        },
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +51,7 @@ class CommitteeScreenCreator extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text(
-          committeeName,
+          widget.committeeName,
           style: kAppbarTitleTextStyle,
         ),
         backgroundColor: kAppbarBackgroundColour,
@@ -35,7 +64,7 @@ class CommitteeScreenCreator extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(
-                  committeeLogo,
+                  widget.committeeLogo,
                 ),
                 colorFilter: ColorFilter.mode(
                   Colors.black.withOpacity(.7),
@@ -56,13 +85,10 @@ class CommitteeScreenCreator extends StatelessWidget {
                 CardCreator(
                   cardTitle: 'ABOUT',
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => CommitteeAboutScreenCreator(
-                          committeeLogo: committeeLogo,
-                          committeeName: committeeName,
-                        ),
+                    _openScreen(
+                      CommitteeAboutScreenCreator(
+                        committeeLogo: widget.committeeLogo,
+                        committeeName: widget.committeeName,
                       ),
                     );
                   },
@@ -71,12 +97,9 @@ class CommitteeScreenCreator extends StatelessWidget {
                 CardCreator(
                   cardTitle: 'SOCIAL',
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => LinkCreator(
-                          committeeLink: committeeLink,
-                        ),
+                    _openScreen(
+                      LinkCreator(
+                        committeeLink: widget.committeeLink,
                       ),
                     );
                   },
@@ -85,13 +108,10 @@ class CommitteeScreenCreator extends StatelessWidget {
                 CardCreator(
                   cardTitle: 'COMMITTEE MEMBERS',
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => CommitteeMembersScreen(
-                          committeeLogo: committeeLogo,
-                          committeeName: committeeName,
-                        ),
+                    _openScreen(
+                      CommitteeMembersScreen(
+                        committeeLogo: widget.committeeLogo,
+                        committeeName: widget.committeeName,
                       ),
                     );
                   },
@@ -100,13 +120,10 @@ class CommitteeScreenCreator extends StatelessWidget {
                 CardCreator(
                   cardTitle: 'JOIN',
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => CommitteeJoinScreen(
-                          committeeLogo: committeeLogo,
-                          committeeName: committeeName,
-                        ),
+                    _openScreen(
+                      CommitteeJoinScreen(
+                        committeeLogo: widget.committeeLogo,
+                        committeeName: widget.committeeName,
                       ),
                     );
                   },
