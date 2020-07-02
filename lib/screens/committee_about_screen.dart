@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:vjcommittee/data/committee_about.dart';
 import 'package:vjcommittee/constants.dart';
 
-class CommitteeAboutScreenCreator extends StatefulWidget {
+class CommitteeAboutScreenCreator extends StatelessWidget {
   CommitteeAboutScreenCreator(
       {@required this.committeeLogo, @required this.committeeName});
 
@@ -10,20 +10,13 @@ class CommitteeAboutScreenCreator extends StatefulWidget {
   final String committeeName;
 
   @override
-  _CommitteeAboutScreenCreatorState createState() =>
-      _CommitteeAboutScreenCreatorState();
-}
-
-class _CommitteeAboutScreenCreatorState
-    extends State<CommitteeAboutScreenCreator> {
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: ListView(
           children: <Widget>[
             Container(
-              child: Image.asset(widget.committeeLogo),
+              child: Image.asset(committeeLogo),
             ),
             Container(
               padding: EdgeInsets.only(left: 10, top: 15, right: 10),
@@ -32,7 +25,7 @@ class _CommitteeAboutScreenCreatorState
                   Container(
                     alignment: Alignment(-.95, 0),
                     child: Text(
-                      widget.committeeName,
+                      committeeName,
                       style: kAboutPageCommitteeTextStyle,
                     ),
                   ),
@@ -56,7 +49,7 @@ class _CommitteeAboutScreenCreatorState
               padding: EdgeInsets.symmetric(horizontal: 10),
               alignment: Alignment(-.95, 0),
               child: CommitteeAboutScreenDataGetter(
-                committeeName: widget.committeeName,
+                committeeName: committeeName,
               ),
             ),
           ],

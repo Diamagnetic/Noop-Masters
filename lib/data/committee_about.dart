@@ -18,12 +18,14 @@ class CommitteeAboutScreenDataGetter extends StatelessWidget {
           if (snapshot.hasData) {
             final aboutData = snapshot.data.documents;
             for (var data in aboutData) {
-              final dataAim = data.data;
-              final aimWidget = Text(
-                '$dataAim',
-                style: kAboutPageDataTextStyle,
-              );
-              aboutWidget.add(aimWidget);
+              if (data.documentID == 'ABOUT') {
+                final dataAim = data.data;
+                final aimWidget = Text(
+                  dataAim['ABOUT'],
+                  style: kAboutPageDataTextStyle,
+                );
+                aboutWidget.add(aimWidget);
+              }
             }
           }
           return Column(
