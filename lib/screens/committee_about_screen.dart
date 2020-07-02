@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vjcommittee/data/committee_about.dart';
+import 'package:vjcommittee/data/committee_data_getter.dart';
 import 'package:vjcommittee/constants.dart';
 
 class CommitteeAboutScreenCreator extends StatelessWidget {
@@ -48,8 +48,9 @@ class CommitteeAboutScreenCreator extends StatelessWidget {
             Container(
               padding: EdgeInsets.symmetric(horizontal: 10),
               alignment: Alignment(-.95, 0),
-              child: CommitteeAboutScreenDataGetter(
+              child: CommitteeDataGetter(
                 committeeName: committeeName,
+                committeeDataType: 'ABOUT',
               ),
             ),
           ],

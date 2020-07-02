@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vjcommittee/constants.dart';
-import 'package:vjcommittee/data/committee_members.dart';
+import 'package:vjcommittee/data/committee_data_getter.dart';
 
 class CommitteeMembersScreen extends StatelessWidget {
   CommitteeMembersScreen(
@@ -45,8 +45,11 @@ class CommitteeMembersScreen extends StatelessWidget {
               ),
             ),
             Container(
-                child:
-                    CommitteeMembersDataGetter(committeeName: committeeName)),
+              child: CommitteeDataGetter(
+                committeeName: committeeName,
+                committeeDataType: 'MEMBERS',
+              ),
+            ),
           ],
         ),
       ),
