@@ -1,34 +1,33 @@
-**PROJECT NAME**  
-VJ COMMITTEE
+# **PROJECT NAME**  
+## VJ COMMITTEE
 
-**Team Name:**  
-Noop Master
+### **Team Name:**  
+### Noop-Master
 
-**Team Members**  
-1.Prajwal Kolte - prajwalkolte13@gmail.com  
-2.Chirag Dhamange - c.dhamange@gmail.com  
-3.Nayan Taori - nayan200000@gmail.com  
-4.Sahil Kacchi - sahilkacchi84@gmail.com  
+### **Team Members**  
+* Prajwal Kolte - prajwalkolte13@gmail.com  
+* Chirag Dhamange - c.dhamange@gmail.com  
+* Nayan Taori - nayan200000@gmail.com  
+* Sahil Kacchi - sahilkacchi84@gmail.com  
 
-**Mentors**  
-1.Palak Mantry  
-2.Shubhankar Gupta  
+### **Mentors**  
+* Palak Mantry  
+* Shubhankar Gupta  
 
-**Description**
+### **Description**
 
-**Technology stack**  
+### **Technology stack**  
 Tools and technologies used in this project are-  
-Flutter  
-Dart Language  
+1. Dart Language<br/>
+2. Flutter  
 
-**Project Setup**
+### **Project Setup**
 
-**Usage**
+### **Usage**
 
-**Applications**
+### **Applications**
 
-**Future scope**
+### **Future scope**
 
-**Screenshots**
-
+### **Screenshots**
 
