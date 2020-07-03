@@ -28,7 +28,8 @@ class _CommitteeDataGetterState extends State<CommitteeDataGetter> {
           if (snapshot.hasData) {
             final information = snapshot.data.documents;
             for (var document in information) {
-              if (document.documentID == 'MEMBERS') {
+              if (document.documentID == 'MEMBERS' &&
+                  widget.committeeDataType == 'MEMBERS') {
                 final postData = document.data;
                 for (String post in postData.keys) {
                   final memberCards = CommitteeMembersCardCreator(
@@ -53,7 +54,8 @@ class _CommitteeDataGetterState extends State<CommitteeDataGetter> {
                     children: requiredDetails,
                   ),
                 );
-              } else if (document.documentID == widget.committeeDataType) {
+              } else if (document.documentID == 'ABOUT' &&
+                  widget.committeeDataType == 'ABOUT') {
                 final aboutCommittee = document.data;
                 final committeeAboutData = Text(
                   aboutCommittee['ABOUT'],
