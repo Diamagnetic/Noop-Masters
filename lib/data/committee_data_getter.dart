@@ -38,11 +38,15 @@ class _CommitteeDataGetterState extends State<CommitteeDataGetter> {
                       children: <Widget>[
                         Text(
                           post,
-                          style: kAboutPageDataTextStyle,
+                          style: kAboutPageDataTextStyle.copyWith(
+                            color: Colors.white,
+                          ),
                         ),
                         Text(
                           postData[post],
-                          style: kAboutPageAboutTextStyle,
+                          style: kAboutPageAboutTextStyle.copyWith(
+                            color: Colors.white,
+                          ),
                         ),
                       ],
                     ),
