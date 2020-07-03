@@ -55,7 +55,7 @@ class _ButtonAnimationState extends State<ButtonAnimation>
           return CommitteeScreenCreator(
             committeeName: widget.committeeName,
             committeeLogo: widget.committeeLogo,
-            committeeLink: widget.committeeLink,
+            committeeInstagramLink: widget.committeeLink,
           );
         },
         transitionsBuilder: (context, animation, _, Widget child) {

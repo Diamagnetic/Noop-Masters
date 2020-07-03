@@ -3,17 +3,17 @@ import 'package:vjcommittee/constants.dart';
 import 'package:vjcommittee/screens/committee_about_screen.dart';
 import 'package:vjcommittee/screens/committee_join_screen.dart';
 import 'package:vjcommittee/screens/committee_members_screen.dart';
-import 'package:vjcommittee/screens/instaLink.dart';
+import 'package:vjcommittee/screens/committee_social_page.dart';
 
 class CommitteeScreenCreator extends StatefulWidget {
   CommitteeScreenCreator(
       {@required this.committeeName,
       @required this.committeeLogo,
-      @required this.committeeLink});
+      @required this.committeeInstagramLink});
 
   final String committeeName;
   final String committeeLogo;
-  final String committeeLink;
+  final String committeeInstagramLink;
 
   @override
   _CommitteeScreenCreatorState createState() => _CommitteeScreenCreatorState();
@@ -98,8 +98,8 @@ class _CommitteeScreenCreatorState extends State<CommitteeScreenCreator>
                   cardTitle: 'SOCIAL',
                   onPressed: () {
                     _openScreen(
-                      LinkCreator(
-                        committeeLink: widget.committeeLink,
+                      CommitteeSocialPage(
+                        committeeInstagramLink: widget.committeeInstagramLink,
                       ),
                     );
                   },
@@ -147,7 +147,7 @@ class CardCreator extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       color: kCardBackgroundColour,
-      elevation: 20,
+      elevation: 10,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(100),
       ),
