@@ -21,25 +21,25 @@ Tools and technologies used in this project are-
 1. Dart Language<br/>
 2. Flutter  
 3. Firebase
-4. git and github
-5. vs code
-6. android studio
+4. Git and Github
+5. VS Code
+6. Android Studio
 
 ### **Project Setup**  
 This project has made use of Android Studio software in which various flutter packages have been used and also firebase has been used to store data. 
 
 ### **Usage**
-1. click on app icon to open the app first.
-2. once app is open you will see home page of app with app name on app bar.
-3. on home page you will see all committee logo as a button.user has to press respective commitee button to explore committee completely.
-4. once you click button you will get on another screen which have ABOUT,SOCIAL,COMMITTEE MEMBERS,COMING SOON BUTTONS, where each button describe its specific roll based on button .
-5. like ABOUT button will tell in brief about committee,SOCIAL button will head user to instagram link of that perticular committee where he/she can explore gallery insight of committee,COMMITTEE MEMBER button will provide all information about head member of committee e.g secretories and last COMING SOON button which you have to wait for future version of app.
+1. Click on app icon to open the app first.
+2. Once the app is open , you will see home page of app with app name on the app bar.
+3. On the home page you will see all the committee logos as buttons.User has to press respective committee button to explore the committee completely.
+4. Once you have clicked the button you will get on another screen which has ABOUT , SOCIAL , COMMITTEE MEMBERS ,COMING SOON BUTTONS , where each button describe its specific roll based on button .
+5. Like 'ABOUT' button will tell in brief about the committee , SOCIAL button will head the user to instagram link of that perticular committee , where he/she can explore gallery insight of the committee , COMMITTEE MEMBER button will provide all information about core members of the committee , e.g secretories and the last button , which is the  COMING SOON button will be added in the future version of app.
 
 ### **Applications**
-fresher student when get in vjti they get confuse right from classroom,lab,to different committee. they are not able to choose committee based on their interest.so this app will help all those student by getting all informaton about all committee at one place so that they can choose and bacome part of committee based on their interest.this app is very helpful for all first year student from  young diploma student to most elder student of PHD and also to those people who want to explore vjti heart completely by knowing about its fest and committee.
+Freshers , when enter in vjti , get confused as to which committe to choose among the different committees.They are not able to decide which committees to join.So this app will help all those students by giving all the informaton about all the committees at one place so that they can choose and become a part of the committee they choose.This app is very helpful for all first year student from  young diploma students to the elder students of PHD and also to those people who want to explore VJTI college completely by knowing about its various fests and committees.In future version it could be possible thay this app may be used to form chat groups instead of Whatsapp. 
 
 ### **Future scope**
-in next version of this app.we are going to add feature in this app with the help of which it will be easy for committee to asign department coordinate,event coordinator,etc post to all fresher and new member who are willing to become a part of  committee.this feature will solve problem of sending resume by fresher to committee.and to committee to schedule interview and deleration of resullt. 
+In the next version of this app , we are going to add some features to this app with the help of which it will be easy for committees to assign department coordinators , event coordinators , and various other posts to all the new members who are willing to become a part of committees as well as the seniors who have been elected for their new posts.This feature will solve the problem of sending resumes by applicants to the committee as well as for the committee to schedule interviews and declare the results. Another feature that is decided is that we are creating a platform where members of different committees can post and share pictures and videos and can also sort of chat.
 
 ### **Screenshots**
 
