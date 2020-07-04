@@ -36,6 +36,7 @@ const kAboutPageAboutTextStyle = TextStyle(
 );
 
 const kAboutPageDataTextStyle = TextStyle(
+  color: Colors.black,
   fontFamily: 'Roboto',
   fontSize: 23,
 );
@@ -43,3 +44,15 @@ const kAboutPageDataTextStyle = TextStyle(
 const kMemberCardTitleTextStyle = kAboutPageDataTextStyle;
 
 const kMemberCardSubtitleTextStyle = kAboutPageAboutTextStyle;
+
+const kMembersPagePostTextStyle = TextStyle(
+  fontFamily: 'Roboto',
+  fontSize: 23,
+  color: Colors.white70,
+);
+
+const kMembersPageMemberTextStyle = TextStyle(
+  color: Colors.white70,
+  fontSize: 20,
+  fontFamily: 'Roboto',
+);

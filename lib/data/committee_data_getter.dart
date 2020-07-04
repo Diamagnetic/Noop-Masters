@@ -47,12 +47,12 @@ class _CommitteeDataGetterState extends State<CommitteeDataGetter> {
                   Text(
                     document.documentID,
                     textAlign: TextAlign.center,
-                    style: kAboutPageDataTextStyle,
+                    style: kMembersPagePostTextStyle,
                   ),
                   Text(
                     member,
                     textAlign: TextAlign.center,
-                    style: kAboutPageAboutTextStyle,
+                    style: kMembersPageMemberTextStyle,
                   ),
                 ],
               ),
