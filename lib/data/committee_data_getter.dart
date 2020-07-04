@@ -16,63 +16,80 @@ class CommitteeDataGetter extends StatefulWidget {
 
 class _CommitteeDataGetterState extends State<CommitteeDataGetter> {
   final Firestore _firestore = Firestore.instance;
+  CollectionReference _committeeDetails;
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.committeeDataType == 'MEMBERS') {
+      _committeeDetails = _firestore
+          .collection(widget.committeeName)
+          .document('MEMBERS')
+          .collection('MEMBERS');
+    } else if (widget.committeeDataType == 'ABOUT') {
+      _committeeDetails = _firestore.collection(widget.committeeName);
+    }
+  }
+
+  Widget _widget(AsyncSnapshot<QuerySnapshot> snapshot) {
+    Widget _child;
+    if (snapshot.hasData) {
+      final information = snapshot.data.documents;
+      List<Widget> requiredDetails = [];
+      for (var document in information) {
+        if (widget.committeeDataType == 'MEMBERS') {
+          final committeeData = document.data;
+          for (var member in committeeData.values) {
+            final memberCards = CommitteeMembersCardCreator(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    document.documentID,
+                    style: kAboutPageDataTextStyle,
+                  ),
+                  Text(
+                    member,
+                    style: kAboutPageAboutTextStyle,
+                  ),
+                ],
+              ),
+            );
+            requiredDetails.add(memberCards);
+          }
+          _child = Container(
+            child: Column(
+              children: requiredDetails,
+            ),
+          );
+        } else if (widget.committeeDataType == 'ABOUT' &&
+            document.documentID == 'ABOUT') {
+          final committeeData = document.data;
+          final committeeAboutData = Text(
+            committeeData['ABOUT'],
+            style: kAboutPageDataTextStyle,
+          );
+          _child = committeeAboutData;
+        }
+      }
+    } else {
+      _child = Center(
+        child: CircularProgressIndicator(
+          backgroundColor: Colors.grey.shade700,
+          strokeWidth: 6,
+        ),
+      );
+    }
+    return _child;
+  }
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: FutureBuilder<QuerySnapshot>(
-        future: _firestore.collection(widget.committeeName).getDocuments(),
+        future: _committeeDetails.getDocuments(),
         builder: (context, snapshot) {
-          List<Widget> requiredDetails = [];
-          Widget child;
-          if (snapshot.hasData) {
-            final information = snapshot.data.documents;
-            for (var document in information) {
-              if (document.documentID == 'MEMBERS' &&
-                  widget.committeeDataType == 'MEMBERS') {
-                final postData = document.data;
-                for (String post in postData.keys) {
-                  final memberCards = CommitteeMembersCardCreator(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Text(
-                          post,
-                          style: kAboutPageDataTextStyle,
-                        ),
-                        Text(
-                          postData[post],
-                          style: kAboutPageAboutTextStyle,
-                        ),
-                      ],
-                    ),
-                  );
-                  requiredDetails.add(memberCards);
-                }
-                child = Container(
-                  child: Column(
-                    children: requiredDetails,
-                  ),
-                );
-              } else if (document.documentID == 'ABOUT' &&
-                  widget.committeeDataType == 'ABOUT') {
-                final aboutCommittee = document.data;
-                final committeeAboutData = Text(
-                  aboutCommittee['ABOUT'],
-                  style: kAboutPageDataTextStyle,
-                );
-                requiredDetails.add(committeeAboutData);
-                child = committeeAboutData;
-              }
-            }
-          } else {
-            child = Center(
-              child: CircularProgressIndicator(
-                backgroundColor: Colors.grey.shade700,
-                strokeWidth: 6,
-              ),
-            );
-          }
+          Widget child = _widget(snapshot);
           return child;
         },
       ),
