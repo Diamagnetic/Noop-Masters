@@ -75,12 +75,10 @@ class _CommitteeScreenCreatorState extends State<CommitteeScreenCreator>
             ),
           ),
           Container(
-            width: 350,
-            height: 550,
+            height: 500,
             margin: EdgeInsets.all(25),
-            child: GridView.count(
-              crossAxisCount: 1,
-              childAspectRatio: 4,
+            child: ListView(
+              itemExtent: 85,
               children: <Widget>[
                 CardCreator(
                   cardTitle: 'ABOUT',
@@ -116,20 +114,48 @@ class _CommitteeScreenCreatorState extends State<CommitteeScreenCreator>
                     );
                   },
                 ),
-                SizedBox(),
-                CardCreator(
-                  cardTitle: 'JOIN',
-                  onPressed: () {
-                    _openScreen(
-                      CommitteeJoinScreen(
-                        committeeLogo: widget.committeeLogo,
-                        committeeName: widget.committeeName,
-                      ),
-                    );
-                  },
-                ),
               ],
             ),
+//            GridView.count(
+//              crossAxisCount: 1,
+//              childAspectRatio: 4,
+//              children: <Widget>[
+//                CardCreator(
+//                  cardTitle: 'ABOUT',
+//                  onPressed: () {
+//                    _openScreen(
+//                      CommitteeAboutScreenCreator(
+//                        committeeLogo: widget.committeeLogo,
+//                        committeeName: widget.committeeName,
+//                      ),
+//                    );
+//                  },
+//                ),
+//                SizedBox(),
+//                CardCreator(
+//                  cardTitle: 'SOCIAL',
+//                  onPressed: () {
+//                    _openScreen(
+//                      CommitteeSocialPage(
+//                        committeeInstagramLink: widget.committeeInstagramLink,
+//                      ),
+//                    );
+//                  },
+//                ),
+//                SizedBox(),
+//                CardCreator(
+//                  cardTitle: 'COMMITTEE MEMBERS',
+//                  onPressed: () {
+//                    _openScreen(
+//                      CommitteeMembersScreen(
+//                        committeeLogo: widget.committeeLogo,
+//                        committeeName: widget.committeeName,
+//                      ),
+//                    );
+//                  },
+//                ),
+//              ],
+//            ),
           ),
         ],
       ),
