@@ -115,46 +115,6 @@ class _CommitteeScreenCreatorState extends State<CommitteeScreenCreator>
                 ),
               ],
             ),
-//            GridView.count(
-//              crossAxisCount: 1,
-//              childAspectRatio: 4,
-//              children: <Widget>[
-//                CardCreator(
-//                  cardTitle: 'ABOUT',
-//                  onPressed: () {
-//                    _openScreen(
-//                      CommitteeAboutScreenCreator(
-//                        committeeLogo: widget.committeeLogo,
-//                        committeeName: widget.committeeName,
-//                      ),
-//                    );
-//                  },
-//                ),
-//                SizedBox(),
-//                CardCreator(
-//                  cardTitle: 'SOCIAL',
-//                  onPressed: () {
-//                    _openScreen(
-//                      CommitteeSocialPage(
-//                        committeeInstagramLink: widget.committeeInstagramLink,
-//                      ),
-//                    );
-//                  },
-//                ),
-//                SizedBox(),
-//                CardCreator(
-//                  cardTitle: 'COMMITTEE MEMBERS',
-//                  onPressed: () {
-//                    _openScreen(
-//                      CommitteeMembersScreen(
-//                        committeeLogo: widget.committeeLogo,
-//                        committeeName: widget.committeeName,
-//                      ),
-//                    );
-//                  },
-//                ),
-//              ],
-//            ),
           ),
         ],
       ),
