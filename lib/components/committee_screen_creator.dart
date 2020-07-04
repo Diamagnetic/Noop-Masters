@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vjcommittee/constants.dart';
 import 'package:vjcommittee/screens/committee_about_screen.dart';
-import 'package:vjcommittee/screens/committee_join_screen.dart';
 import 'package:vjcommittee/screens/committee_members_screen.dart';
 import 'package:vjcommittee/screens/committee_social_page.dart';
 
