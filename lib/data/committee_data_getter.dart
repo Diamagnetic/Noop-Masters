@@ -46,10 +46,12 @@ class _CommitteeDataGetterState extends State<CommitteeDataGetter> {
                 children: <Widget>[
                   Text(
                     document.documentID,
+                    textAlign: TextAlign.center,
                     style: kAboutPageDataTextStyle,
                   ),
                   Text(
                     member,
+                    textAlign: TextAlign.center,
                     style: kAboutPageAboutTextStyle,
                   ),
                 ],
@@ -72,11 +74,21 @@ class _CommitteeDataGetterState extends State<CommitteeDataGetter> {
           _child = committeeAboutData;
         }
       }
-    } else {
+    } else if (snapshot.connectionState == ConnectionState.waiting) {
       _child = Center(
         child: CircularProgressIndicator(
           backgroundColor: Colors.grey.shade700,
           strokeWidth: 6,
+        ),
+      );
+    } else {
+      _child = Container(
+        child: Text(
+          'ERROR',
+          style: TextStyle(
+            fontFamily: 'Roboto',
+            fontSize: 30,
+          ),
         ),
       );
     }

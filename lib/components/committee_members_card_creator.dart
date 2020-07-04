@@ -12,6 +12,7 @@ class CommitteeMembersCardCreator extends StatelessWidget {
       child: child,
       height: 80,
       width: double.infinity,
+      padding: EdgeInsets.symmetric(horizontal: 10),
       margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 10.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
