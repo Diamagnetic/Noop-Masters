@@ -51,7 +51,7 @@ In the next version of this app , we are going to add some features to this app 
     <td>Home Page</td>
   </tr>
   <tr>
-    <td>![Screenshot_1593949241 (1)](https://user-images.githubusercontent.com/64462883/86534145-a010b000-bef3-11ea-8f21-c926d1c588f4.png)</td>
+    <td><img src="images/app_logo.png" width=270 height=480></td>
   </tr>
 </table>
 <!-- ![Screenshot_1593949241 (1)](https://user-images.githubusercontent.com/64462883/86534145-a010b000-bef3-11ea-8f21-c926d1c588f4.png)
