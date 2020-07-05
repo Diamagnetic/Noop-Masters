@@ -46,18 +46,9 @@ Freshers , when enter in VJTI , get confused as to which committe to choose amon
 In the next version of this app , we are going to add some features to this app with the help of which it will be easy for committees to assign department coordinators , event coordinators , and various other posts to all the new members who are willing to become a part of committees as well as the seniors who have been elected for their new posts.The joining process of various committees will also be explained in future versions of the app .This feature will solve the problem of sending resumes by applicants to the committee as well as for the committee to schedule interviews and declare the results. Another feature that is decided is that we are creating a platform where members of different committees can post and share pictures and videos and can also sort of chat.
 
 ### **Screenshots**   
-<table>
-  <tr>
-    <td>Home Page</td>
-    <td>Committee Page</td>
-    <td>About Page</td>
-    <td>Social Page</td>
-    <td>Members Page</td>
-  </tr>
-  <tr>
-    <td>![image](https://drive.google.com/uc?export=view&id=1fXze_Lb78PHM9jtqPT5LkZ6pVR2dmo4z)</td>
-  </tr>
-</table>
+| Home Page | bar |
+| --- | --- |
+| ![image](https://drive.google.com/uc?export=view&id=1fXze_Lb78PHM9jtqPT5LkZ6pVR2dmo4z) | bim |
 <!-- ![Screenshot_1593949241 (1)](https://user-images.githubusercontent.com/64462883/86534145-a010b000-bef3-11ea-8f21-c926d1c588f4.png)
 ![Screenshot_1593949287](https://user-images.githubusercontent.com/64462883/86533995-c255fe00-bef2-11ea-88b8-1598f0b74b07.png)  
 ![Screenshot_1593949300](https://user-images.githubusercontent.com/64462883/86534031-fcbf9b00-bef2-11ea-9073-aae454f2b058.png)  
