@@ -18,6 +18,7 @@
 The 'VJ Committee' App is based on the various commitees of VJTI College.It shows what various committees are based on. It gives detailed information of every committee present in the college. Their description , the present core body of the committees and gallery of photos of the events of various committees.It is basically the app which will let the students choose , join ,post photos and even connect with seniors of various branches in the same committee.This app serves as a complete guide for students of first year to choose which committee to join among the various committees present.Also this app will be important , as the app may be available to use by students which will make various processes like resume submission paperless , time saving as many announcements can be done via this app , which will lead to less confusion , and many more such advantages.
 
 * GitHub repository link : https://github.com/Diamagnetic/Noop-Masters.git
+* Google drive link : https://drive.google.com/drive/u/2/my-drive
 
 ### **Technology stack**  
 Tools and technologies used in this project are-  
@@ -46,11 +47,24 @@ Freshers , when enter in VJTI , get confused as to which committe to choose amon
 In the next version of this app , we are going to add some features to this app with the help of which it will be easy for committees to assign department coordinators , event coordinators , and various other posts to all the new members who are willing to become a part of committees as well as the seniors who have been elected for their new posts.The joining process of various committees will also be explained in future versions of the app .This feature will solve the problem of sending resumes by applicants to the committee as well as for the committee to schedule interviews and declare the results. Another feature that is decided is that we are creating a platform where members of different committees can post and share pictures and videos and can also sort of chat.
 
 ### **Screenshots**   
-<img src="https://drive.google.com/uc?export=view&id=1fXze_Lb78PHM9jtqPT5LkZ6pVR2dmo4z" width="200" height="350">
-<!-- ![Screenshot_1593949241 (1)](https://user-images.githubusercontent.com/64462883/86534145-a010b000-bef3-11ea-8f21-c926d1c588f4.png)
-![Screenshot_1593949287](https://user-images.githubusercontent.com/64462883/86533995-c255fe00-bef2-11ea-88b8-1598f0b74b07.png)  
-![Screenshot_1593949300](https://user-images.githubusercontent.com/64462883/86534031-fcbf9b00-bef2-11ea-9073-aae454f2b058.png)  
-![Screenshot_1593949258](https://user-images.githubusercontent.com/64462883/86534080-38f2fb80-bef3-11ea-80b8-a5fd2d4854e1.png) -->
+<table>
+  <tr>
+    <td>Home Page</td>
+    <td>Committee Page</td>
+    <td>About Page</td>
+    <td>Social Page</td>
+    <td>Committee Members Page</td>
+  </tr>
+  <tr>
+    <td> <img src="https://drive.google.com/uc?export=view&id=1fXze_Lb78PHM9jtqPT5LkZ6pVR2dmo4z" width="200" height="350"></td>
+    <td> <img src="https://drive.google.com/uc?export=view&id=18kTMMu7jqQCi2GE1NZL_6jiqPA-jmG8m" width="200" height="350"></td>
+    <td> <img src="https://drive.google.com/uc?export=view&id=1givzHYgsQmqHs-sI_9HtxynrH2QMKKBJ" width="200" height="350"></td>
+    <td> <img src="https://drive.google.com/uc?export=view&id=1DAuOgR7epcyqOy_P15VgeuNz7Y946v-w" width="200" height="350"></td>
+    <td> <img src="https://drive.google.com/uc?export=view&id=1EqcuKllVsDzhxlTT60aviY4FUnU_BHWW" width="200" height="350"></td>
+  </tr>
+</table>
+
+
 
 
 
