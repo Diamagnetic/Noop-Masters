@@ -49,6 +49,8 @@ In the next version of this app , we are going to add some features to this app 
 ![Screenshot_1593949230](https://user-images.githubusercontent.com/64462883/86533916-2d530500-bef2-11ea-8aae-d5a07bd7f67c.png)  
 
 ![Screenshot_1593949287](https://user-images.githubusercontent.com/64462883/86533995-c255fe00-bef2-11ea-88b8-1598f0b74b07.png)  
-![Screenshot_1593949300](https://user-images.githubusercontent.com/64462883/86534031-fcbf9b00-bef2-11ea-9073-aae454f2b058.png)
+![Screenshot_1593949300](https://user-images.githubusercontent.com/64462883/86534031-fcbf9b00-bef2-11ea-9073-aae454f2b058.png)  
+![Screenshot_1593949258](https://user-images.githubusercontent.com/64462883/86534080-38f2fb80-bef3-11ea-80b8-a5fd2d4854e1.png)
+
 
 
