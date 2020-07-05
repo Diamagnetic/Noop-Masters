@@ -15,7 +15,7 @@
 * Shubhankar Gupta  
 
 ### **Description**  
-The 'VJ Committee' App is based on the various commitees of VJTI College.It shows what various committees are based on. It gives detailed information of every committee present in the college. Their description , the present core body of the committees and gallery of photos of the events of various committees.It is basically the app which will let the students choose , join ,post photos and even connect with seniors of various branches in the same committee.
+The 'VJ Committee' App is based on the various commitees of VJTI College.It shows what various committees are based on. It gives detailed information of every committee present in the college. Their description , the present core body of the committees and gallery of photos of the events of various committees.It is basically the app which will let the students choose , join ,post photos and even connect with seniors of various branches in the same committee.This app serves as a complete guide for students of first year to choose which committee to join among the various committees present.Also this app will be important , as the app may be available to use by students which will make various processes like resume submission paperless , time saving as many announcements can be done via this app , which will lead to less confusion , and many more such advantages.
 
 * GitHub repository link : 
 
@@ -29,7 +29,8 @@ Tools and technologies used in this project are-
 6. Android Studio
 
 ### **Project Setup**  
-This project has made use of Android Studio software/VS Code software , in which various flutter packages have been used and also firebase has been used to store data.For using flutter , Dart Language has been used.The flutter packages for various buttons and animations have been used .
+This project has made use of Android Studio software/VS Code software , in which various flutter packages have been used and also firebase has been used to store data.For using flutter , Dart Language has been used.The flutter packages for various buttons and animations have been used .Also there are various courses for learning various things about app making using flutter and Android Studio/VS Code.
+To see the code , one can download Android Studio or VS Code . Then copy the link of the repository given above and open the option of Version Control.Then you can paste the link of repository and open it from 'Existing Android Studio Projects' option.The code will open and then you can run iy on a virtual emulator created by you or on your phone itself.
 
 ### **Usage**
 1. Click on the app icon to open the app first.
