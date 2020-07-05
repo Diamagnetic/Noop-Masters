@@ -14,7 +14,8 @@
 * Palak Mantry  
 * Shubhankar Gupta  
 
-### **Description**
+### **Description**  
+The 'VJ Committee' App is based on the various commitees of VJTI College.It shows what various committees are based on. It gives detailed information of every committee present in the college. Their description , the present core body of the committees and gallery of photos of the events of various committees.It is basically the app which will let the students choose , join ,post photos and even connect with seniors of various branches in the same committee.
 
 ### **Technology stack**  
 Tools and technologies used in this project are-  
