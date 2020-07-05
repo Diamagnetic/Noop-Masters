@@ -8,7 +8,7 @@
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:label="vjcommittee"
-        android:icon="@mipmap/applogo">
+        android:icon="@mipmap/app_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
