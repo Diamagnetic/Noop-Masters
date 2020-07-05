@@ -55,11 +55,7 @@ In the next version of this app , we are going to add some features to this app 
     <td>Members Page</td>
   </tr>
   <tr>
-    <td><img src="images/home_page.png" width=270 height=480></td>
-    <td><img src="images/committee_screen.png" width=270 height=480></td>
-    <td><img src="images/about_screen.png" width=270 height=480></td>
-    <td><img src="images/social_screen.png" width=270 height=480></td>
-    <td><img src="images/members_screen.png" width=270 height=480></td>
+    <td>![image](https://drive.google.com/uc?export=view&id=1fXze_Lb78PHM9jtqPT5LkZ6pVR2dmo4z)</td>
   </tr>
 </table>
 <!-- ![Screenshot_1593949241 (1)](https://user-images.githubusercontent.com/64462883/86534145-a010b000-bef3-11ea-8f21-c926d1c588f4.png)
