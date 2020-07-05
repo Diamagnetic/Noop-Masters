@@ -17,7 +17,7 @@
 ### **Description**  
 The 'VJ Committee' App is based on the various commitees of VJTI College.It shows what various committees are based on. It gives detailed information of every committee present in the college. Their description , the present core body of the committees and gallery of photos of the events of various committees.It is basically the app which will let the students choose , join ,post photos and even connect with seniors of various branches in the same committee.This app serves as a complete guide for students of first year to choose which committee to join among the various committees present.Also this app will be important , as the app may be available to use by students which will make various processes like resume submission paperless , time saving as many announcements can be done via this app , which will lead to less confusion , and many more such advantages.
 
-* GitHub repository link : 
+* GitHub repository link : https://github.com/Diamagnetic/Noop-Masters.git
 
 ### **Technology stack**  
 Tools and technologies used in this project are-  
