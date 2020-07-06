@@ -31,7 +31,7 @@ Tools and technologies used in this project are-
 
 ### **Project Setup**  
 This project has made use of Android Studio software/VS Code software , in which various flutter packages have been used and also firebase has been used to store data.For using flutter , Dart Language has been used.The flutter packages for various buttons and animations have been used .Also there are various courses for learning various things about app making using flutter and Android Studio/VS Code.
-To see the code , one can download Android Studio or VS Code . Then copy the link of the repository given above and open the option of Version Control.Then you can paste the link of repository and open it from 'Existing Android Studio Projects' option.The code will open and then you can run iy on a virtual emulator created by you or on your phone itself.
+To see the code , one can download Android Studio or VS Code . Then copy the link of the repository given above and open the option of Version Control.Then you can paste the link of repository and open it from 'Existing Android Studio Projects' option.The code will open and then you can run it on a virtual emulator created by you or on your phone itself.
 
 ### **Usage**
 1. Click on the app icon to open the app first.
