@@ -5,9 +5,9 @@
 ### Noop-Master
 
 ### **Team Members**  
-* Prajwal Kolte - prajwalkolte13@gmail.com  
-* Chirag Dhamange - c.dhamange@gmail.com  
 * Nayan Taori - nayan200000@gmail.com  
+* Prajwal Kolte - prajwalkolte13@gmail.com  
+* Chirag Dhamange - c.dhamange@gmail.com   
 * Sahil Kacchi - sahilkacchi84@gmail.com  
 
 ### **Mentors**  
